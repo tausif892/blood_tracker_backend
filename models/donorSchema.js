@@ -7,7 +7,7 @@ const donorSchema = mongoose.Schema({
     },
 
     age: {
-        type: Number,
+        type: String,
         required: [true, `Please enter the age of the blood donor`]
     },
     
@@ -17,7 +17,7 @@ const donorSchema = mongoose.Schema({
     },
 
     phone_number: {
-        type: Number,
+        type: String,
         required: [true,`Please enter the phone number of the blood donor`]
     },
 
@@ -27,7 +27,7 @@ const donorSchema = mongoose.Schema({
     },
 
     alternate_contact: {
-        type: Number,
+        type: String,
         required: [false,`Please enter the alternate contact number (optional)`]
     },
 });
